@@ -1,12 +1,15 @@
 import { useState } from "react";
+import Header from "./components/Header";
 import NotificationButton from "./components/NotificationButton";
-import logo from './logo.svg';
+
+
 
 function App() {
   const [count, setCount]= useState(0);
 
   return(
     <>
+    <Header />
     <NotificationButton />
     <NotificationButton />
     <NotificationButton />
