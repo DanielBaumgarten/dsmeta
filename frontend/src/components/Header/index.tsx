@@ -6,7 +6,7 @@ function Header() {
         <div className="dsmeta-logo-container">
             <img src={logo} alt="logo DsMeta" />
             <h1>Ds Meta</h1>
-            <p>Desenvolvido por link do Linkedn:
+            <p>Acesse meu LinkedIn:
                 <a href="https://www.linkedin.com/in/daniel-baumgarten-9056192a/"> Daniel Baumgarten </a>
             </p>
         </div>
