@@ -9,8 +9,8 @@ import './styles.css';
 
 function SalesCard() {
 
-    const max = new Date();
     const min = new Date(new Date().setDate(new Date().getDate() - 365));
+    const max = new Date();
 
     const [minDate, setMinDate] = useState(min);
     const [maxDate, setMaxDate] = useState(max);
@@ -26,7 +26,6 @@ function SalesCard() {
             .then(response => {
                 setSales(response.data.content);
             })
-
     }, [minDate,maxDate]);
 
     return (
@@ -65,8 +64,7 @@ function SalesCard() {
                         </tr>
                     </thead>
                     <tbody>
-                        {
-                            sales.map(sale => {
+                        {sales.map(sale => {
                                 return (
                                     <tr key={sale.id}>
                                         <td className="show992">{sale.id}</td>
